@@ -1,129 +1,196 @@
-📊 Supermarket Sales Analysis & Insights Dashboard
+📊 Supermarket Business Intelligence & Analytics Dashboard
 
-An interactive and comprehensive Power BI Data Analysis project focused on sales performance, customer behavior, and product line analysis for a supermarket chain.
+An end-to-end Data Analytics project powered by Power BI to evaluate financial metrics, sales trends, customer behavior, and category performance for a retail supermarket network.
+
+🖼️ Dashboards Preview
+
+1. Sales & Financial Performance Overview_(num1.png)
+
+2. Customer & Product Insights Overview
+
+📑 Executive Summary
+
+This repository contains an interactive two-page Power BI dashboard designed to give stakeholders full visibility into retail operations. It combines high-level financial KPIs with granular transactional and demographic insights to drive data-informed decision-making.
+
+💾 Dataset Overview (supermarket.csv)
+
+The underlying dataset contains transactional records from 3 supermarket branches (Naypyitaw, Yangon, Mandalay) across various product categories.
+
+Column Field
+
+Description
+
+Type
+
+Invoice ID
+
+Unique transaction identifier
+
+Text
+
+Branch / City
+
+Store branch (A, B, C) and city location
+
+Categorical
+
+Customer Type
+
+Member vs. Normal customer
+
+Categorical
+
+Gender
+
+Customer gender (Female / Male)
+
+Categorical
+
+Product Line
+
+Item category (e.g., Food & Beverages, Electronic Accessories)
+
+Categorical
+
+Unit Price / Quantity
+
+Price per unit ($) and quantity purchased
+
+Numeric
+
+Tax 5% / Total
+
+Calculated tax and total transaction amount ($)
+
+Numeric
+
+Date / Time
+
+Timestamp of transaction
+
+Date/Time
+
+Payment
+
+Payment method used (Cash, Credit Card, E-wallet)
+
+Categorical
+
+Rating
+
+Customer satisfaction score (1 to 10 scale)
+
+Numeric
+
+📈 Dashboard Breakdown & Visual Analysis
+
+🟢 1. Sales & Financial Performance (num1.png)
+
+Focuses on revenue generation, tax accounting, unit volume, and revenue drivers across locations and product lines.
+
+🎯 Key Performance Indicators (KPIs)
+
+Total Sales ($322.97K): Gross revenue generated across all transactions.
+
+Net Sales Before Tax ($307.59K): Core sales figure excluding tax contributions.
+
+Total Tax ($15.38K): Total 5% VAT collected.
+
+Total Quantity (6K): Total units sold across all lines.
+
+Number of Invoices (1K): Total order volume processed.
+
+Average Bill Value ($322.97): Average dollar spend per transaction.
+
+Average Unit Price ($55.67): Average price point across product categories.
+
+📊 Chart & Visual Analysis
+
+Total Sales by Month (Area Line Chart):
+
+Trend Analysis: Shows high sales volume in January (~$116K), followed by a dip in February (~$97K), and a strong recovery in March (~$109K).
+
+Sales by City (Bar Chart):
+
+Geographic Performance: Revenue distribution is highly balanced across cities: Naypyitaw ($111K), Yangon ($106K), and Mandalay ($106K).
+
+Sales by Product Line (Horizontal Bar Chart):
+
+Top Earners: Food and Beverages leads gross sales ($56K), followed closely by Sports and Travel ($55K) and Electronic Accessories ($54K).
+
+Sales by Payment (Donut Chart):
+
+Payment Channels: E-wallet leads with 34.74% ($112.21K), Cash accounts for 31.2% ($100.77K), and Credit Card takes 34.06% ($109.93K).
+
+Branch & Product Line Matrix (Detailed Table):
+
+Displays granular performance metrics comparing branches against product categories, total sales, items sold, and average ratings.
+
+🔵 2. Customer & Product Insights (num.png)
+
+Focuses on shopper demographics, peak traffic hours, customer satisfaction, and product rating trends.
+
+🎯 Key Performance Indicators (KPIs)
+
+Average Rating (6.97 / 10): Overall customer satisfaction baseline.
+
+Member Sales % (50.85%) vs. Normal Sales % (49.15%): Customer retention and loyalty ratio.
+
+Female Sales % (51.98%) vs. Male Sales % (48.02%): Gender demographic breakdown.
+
+Avg Quantity per Invoice (5.51): Basket size per checkout.
+
+Top Branch by Rating (Branch C): Store branch leading in overall satisfaction.
+
+📊 Chart & Visual Analysis
+
+Sales by Hour of the Day (Line Chart):
+
+Traffic Dynamics: Identifies peak shopping hours at 14:00 (2 PM) (~$34.7K) and 19:00 (7 PM) (~$39.7K), highlighting optimal times for store staffing and cashier allocations.
+
+Product Line by Average Rating (Horizontal Bar Chart):
+
+Customer Satisfaction: Food and Beverages scores highest in customer ratings (7.1), while Home and Lifestyle sits at the lower end (6.8).
+
+Quantity & Sales Relationship (Scatter Plot):
+
+Volume vs. Value: Evaluates category placement by total unit volume vs. revenue generated to spot high-margin vs. high-volume inventory.
+
+Customer Type Breakdown (Color-Coded Heatmap Table):
+
+Compares revenue and items sold based on membership tier (Member vs. Normal) across product lines.
+
+Branch by Average Rating (Column Chart):
+
+Branch Satisfaction: Branch C (7.1 rating) > Branch A (7.0 rating) > Branch B (6.8 rating).
+
+💡 Key Business Takeaways & Recommendations
+
+Staffing Optimization: Schedule additional cashier and floor staff around 2 PM and 7 PM to handle daily peak volume surges efficiently.
+
+Product Focus: Food and Beverages is the core revenue driver and holds the highest customer rating (7.1). Expand product offerings in this category.
+
+Loyalty Program Conversion: Normal customers make up 49.15% of sales; offering sign-up incentives at checkout could significantly boost membership conversion.
+
+Payment Gateway Reliability: E-wallets and Cards represent >68% of total transactions. Ensuring zero downtime in digital point-of-sale systems is vital.
+
+📂 Repository Structure
 
 .
-├── Dashboard Supermarket.pbix   # Power BI project file
-├── supermarket.csv               # Dataset used for analysis
-├── num.png                      # Screenshot: Sales & Financial Performance
-├── num1.png                     # Screenshot: Customer & Product Insights
-└── README.md        
-
-📌 Table of Contents
-
-Project Overview
-
-Key Features & Pages
-
-1. Sales & Financial Performance
-
-2. Customer & Product Insights
-
-Data Structure
-
-Key Insights & Findings
-
-How to Use
-
-📑 Project Overview
-
-This dashboard provides an end-to-end view of supermarket performance, allowing stakeholders to track revenue growth, identify top-selling product categories, analyze customer demographics (gender and membership status), and understand shopping habits across different times of the day and store branches.
-
-📈 Key Features & Pages
-
-1. Sales & Financial Performance
-
-This view focuses on overall revenue, unit sales, tax metrics, and distribution across cities and payment methods.
-
-Key Metrics (KPIs):
-
-Total Sales: $322.97K
-
-Net Sales Before Tax: $307.59K
-
-Total Tax: $15.38K
-
-Total Quantity Sold: 6K units
-
-Number of Invoices: 1K transactions
-
-Average Bill Value: $322.97
-
-Average Unit Price: $55.67
-
-Visual Analytics:
-
-Sales Trends over Time: Monthly sales analysis tracking performance peaks and dips.
-
-Sales by City: Revenue distribution across branches (Naypyitaw, Yangon, Mandalay).
-
-Sales by Product Line: Bar breakdown showing revenue leaderboards (Food & Beverages, Sports & Travel, Electronic Accessories, etc.).
-
-Sales by Payment Method: Percentage breakdown of transactions completed via Cash, E-wallet, and Credit Card.
-
-Branch Performance Table: Detailed granular stats on sales, quantity sold, and average rating by branch and category.
-
-2. Customer & Product Insights
-
-This view shifts focus to customer demographics, satisfaction levels, peak shopping hours, and customer retention metrics.
-
-Key Metrics (KPIs):
-
-Average Rating: 6.97 / 10
-
-Member Sales %: 50.85%
-
-Normal Sales %: 49.15%
-
-Female Sales %: 51.98%
-
-Male Sales %: 48.02%
-
-Average Quantity per Invoice: 5.51 units
-
-Top Branch by Rating: Branch C
-
-Visual Analytics:
-
-Sales by Hour of the Day: Peak shopping time detection throughout operating hours (high volume around 14:00 and 19:00).
-
-Product Line by Average Rating: Satisfaction scores across different product categories.
-
-Quantity & Sales Relationship: Scatter plot comparing sales total vs. item volume per category.
-
-Customer Type Breakdown: Detailed metrics contrasting Member vs. Normal customer behaviors.
-
-Branch Satisfaction Ranking: Comparative rating score per branch (Branch C leading with 7.1).
-
-📁 Repository Structure
-
-.
-├── Dashboard Supermarket.pbix   # Power BI project file
-├── supermarket.csv               # Dataset used for analysis
-├── num.png                      # Screenshot: Sales & Financial Performance
-├── num1.png                     # Screenshot: Customer & Product Insights
-└── README.md                    # Project documentation
+├── Dashboard Supermarket.pbix   # Primary Power BI Dashboard File
+├── supermarket.csv               # Raw Dataset
+├── num1.png                     # Page 1 Screenshot (Sales & Financials)
+├── num.png                      # Page 2 Screenshot (Customer Insights)
+└── README.md                    # Project Documentation
 
 
-💡 Key Insights & Takeaways
+🛠️ Requirements & How to Run
 
-Balanced Customer Base: The split between Members (50.85%) and Normal customers (49.15%) indicates steady baseline customer loyalty with opportunities for membership drive conversion.
-
-Peak Operating Hours: Hourly traffic surges around 2 PM and 7 PM. Store staffing and checkout lines should be optimized during these time slots.
-
-Product Line Leaders: Food and Beverages leads in both total revenue ($56K) and customer ratings (7.1), making it the store's primary growth engine.
-
-Payment Preferences: Payment methods are evenly split among Cash, E-wallet, and Credit Card, requiring all payment gateways to remain active and efficient.
-
-🛠️ How to Use
-
-Clone the repository:
+Clone this repository:
 
 git clone https://github.com/ahmedelsayeddev1/YOUR-REPO-NAME.git
 
 
-Open the Power BI File:
+Download and install Power BI Desktop.
 
-Ensure you have Power BI Desktop installed.
-
-Open Dashboard Supermarket.pbix to interact with dynamic filters and slicers.
+Open Dashboard Supermarket.pbix to explore the interactive visual features, filters, and slicers.
