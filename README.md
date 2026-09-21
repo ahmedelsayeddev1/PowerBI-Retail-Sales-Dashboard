@@ -1,196 +1,377 @@
-📊 Supermarket Business Intelligence & Analytics Dashboard
+# 📊 Supermarket Business Intelligence & Analytics Dashboard
 
-An end-to-end Data Analytics project powered by Power BI to evaluate financial metrics, sales trends, customer behavior, and category performance for a retail supermarket network.
+An end-to-end **Business Intelligence & Data Analytics** project built with **Microsoft Power BI** to analyze supermarket sales performance, customer behavior, product-line performance, payment methods, and customer satisfaction.
 
-🖼️ Dashboards Preview
+The dashboard transforms transactional retail data into actionable business insights through interactive KPIs, analytical visuals, and cross-dimensional analysis.
 
-1. Sales & Financial Performance Overview_(num1.png)
+---
 
-2. Customer & Product Insights Overview
+## 🖼️ Dashboard Preview
 
-📑 Executive Summary
+### Sales & Financial Performance
 
-This repository contains an interactive two-page Power BI dashboard designed to give stakeholders full visibility into retail operations. It combines high-level financial KPIs with granular transactional and demographic insights to drive data-informed decision-making.
+![Sales & Financial Performance](num1.png)
 
-💾 Dataset Overview (supermarket.csv)
+### Customer & Product Insights
 
-The underlying dataset contains transactional records from 3 supermarket branches (Naypyitaw, Yangon, Mandalay) across various product categories.
+![Customer & Product Insights](num.png)
 
-Column Field
+---
 
-Description
+## 📌 Project Overview
 
-Type
+This project presents an interactive **two-page Power BI dashboard** designed to provide a comprehensive view of supermarket operations.
 
-Invoice ID
+The analysis focuses on:
 
-Unique transaction identifier
+* 💰 Sales & financial performance
+* 📈 Monthly and hourly sales trends
+* 🏪 Branch and city performance
+* 🛍️ Product-line performance
+* 👥 Customer type and gender analysis
+* 💳 Payment method analysis
+* ⭐ Customer satisfaction and ratings
+* 📦 Quantity and transaction behavior
 
-Text
+The dashboard enables users to explore performance across multiple dimensions using interactive filters and visualizations.
 
-Branch / City
+---
 
-Store branch (A, B, C) and city location
+## 🎯 Business Objectives
 
-Categorical
+The main objectives of this project are to:
 
-Customer Type
+* Monitor overall sales performance through key financial KPIs.
+* Identify the highest-performing cities, branches, and product lines.
+* Analyze customer purchasing behavior.
+* Understand customer membership and demographic patterns.
+* Identify peak sales hours and periods.
+* Evaluate customer satisfaction across branches and product lines.
+* Analyze payment method preferences.
+* Identify relationships between sales, quantity, price, and ratings.
 
-Member vs. Normal customer
+---
 
-Categorical
+## 📊 Dashboard Pages
 
-Gender
+### 1. Sales & Financial Performance
 
-Customer gender (Female / Male)
+This page provides a high-level overview of revenue generation, transaction volume, tax, product performance, payment methods, and geographic sales distribution.
 
-Categorical
+#### Key Performance Indicators
 
-Product Line
+| KPI                    |    Value |
+| ---------------------- | -------: |
+| **Total Sales**        | $322.97K |
+| **Sales Before Tax**   | $307.59K |
+| **Total Tax**          |  $15.38K |
+| **Total Quantity**     |       6K |
+| **Number of Invoices** |       1K |
+| **Average Bill Value** |  $322.97 |
+| **Average Unit Price** |   $55.67 |
 
-Item category (e.g., Food & Beverages, Electronic Accessories)
+#### Key Visualizations
 
-Categorical
+**Total Sales by Month**
 
-Unit Price / Quantity
+* January generated approximately **$116K** in sales.
+* February recorded approximately **$97K**.
+* March recovered to approximately **$109K**.
 
-Price per unit ($) and quantity purchased
+**Sales by City**
 
-Numeric
+| City      | Sales |
+| --------- | ----: |
+| Naypyitaw | $111K |
+| Yangon    | $106K |
+| Mandalay  | $106K |
 
-Tax 5% / Total
+Sales are relatively balanced across the three cities.
 
-Calculated tax and total transaction amount ($)
+**Sales by Product Line**
 
-Numeric
+* **Food and Beverages:** ~$56K
+* **Sports and Travel:** ~$55K
+* **Electronic Accessories:** ~$54K
 
-Date / Time
+**Sales by Payment Method**
 
-Timestamp of transaction
+| Payment Method |  Share |
+| -------------- | -----: |
+| E-wallet       | 34.74% |
+| Credit Card    | 34.06% |
+| Cash           | 31.20% |
 
-Date/Time
+The payment analysis provides insight into customer payment preferences and digital-payment adoption.
 
-Payment
+**Branch & Product Line Matrix**
 
-Payment method used (Cash, Credit Card, E-wallet)
+A detailed matrix compares:
 
-Categorical
+* Branch
+* Product Line
+* Total Sales
+* Quantity Sold
+* Average Rating
 
-Rating
+This enables users to drill down from branch-level performance into individual product categories.
 
-Customer satisfaction score (1 to 10 scale)
+---
 
-Numeric
+### 2. Customer & Product Insights
 
-📈 Dashboard Breakdown & Visual Analysis
+This page focuses on customer behavior, purchasing patterns, sales timing, product ratings, and branch satisfaction.
 
-🟢 1. Sales & Financial Performance (num1.png)
+#### Key Performance Indicators
 
-Focuses on revenue generation, tax accounting, unit volume, and revenue drivers across locations and product lines.
+| KPI                              |     Value |
+| -------------------------------- | --------: |
+| **Average Rating**               | 6.97 / 10 |
+| **Member Sales %**               |    50.85% |
+| **Normal Sales %**               |    49.15% |
+| **Female Sales %**               |    51.98% |
+| **Male Sales %**                 |    48.02% |
+| **Average Quantity per Invoice** |      5.51 |
+| **Top Branch by Rating**         |  Branch C |
 
-🎯 Key Performance Indicators (KPIs)
+#### Key Visualizations
 
-Total Sales ($322.97K): Gross revenue generated across all transactions.
+**Sales by Hour of the Day**
 
-Net Sales Before Tax ($307.59K): Core sales figure excluding tax contributions.
+The hourly sales analysis highlights periods with higher sales activity.
 
-Total Tax ($15.38K): Total 5% VAT collected.
+* **14:00 (2 PM):** ~$34.7K
+* **19:00 (7 PM):** ~$39.7K
 
-Total Quantity (6K): Total units sold across all lines.
+This analysis can help management understand daily demand patterns and plan operational resources accordingly.
 
-Number of Invoices (1K): Total order volume processed.
+**Product Line by Average Rating**
 
-Average Bill Value ($322.97): Average dollar spend per transaction.
+* **Food and Beverages:** ~7.1
+* **Home and Lifestyle:** ~6.8
 
-Average Unit Price ($55.67): Average price point across product categories.
+This visualization compares customer satisfaction across product categories.
 
-📊 Chart & Visual Analysis
+**Quantity & Sales Relationship**
 
-Total Sales by Month (Area Line Chart):
+A scatter plot examines the relationship between:
 
-Trend Analysis: Shows high sales volume in January (~$116K), followed by a dip in February (~$97K), and a strong recovery in March (~$109K).
+* Quantity Sold
+* Total Sales
 
-Sales by City (Bar Chart):
+This helps identify product lines that generate high sales through either higher sales volume or higher transaction value.
 
-Geographic Performance: Revenue distribution is highly balanced across cities: Naypyitaw ($111K), Yangon ($106K), and Mandalay ($106K).
+**Customer Type Breakdown**
 
-Sales by Product Line (Horizontal Bar Chart):
+The dashboard compares **Member** and **Normal** customers across product lines using:
 
-Top Earners: Food and Beverages leads gross sales ($56K), followed closely by Sports and Travel ($55K) and Electronic Accessories ($54K).
+* Sales
+* Quantity Sold
+* Customer Type
 
-Sales by Payment (Donut Chart):
+**Branch by Average Rating**
 
-Payment Channels: E-wallet leads with 34.74% ($112.21K), Cash accounts for 31.2% ($100.77K), and Credit Card takes 34.06% ($109.93K).
+| Branch   | Average Rating |
+| -------- | -------------: |
+| Branch C |            7.1 |
+| Branch A |            7.0 |
+| Branch B |            6.8 |
 
-Branch & Product Line Matrix (Detailed Table):
+---
 
-Displays granular performance metrics comparing branches against product categories, total sales, items sold, and average ratings.
+## 💡 Key Business Insights
 
-🔵 2. Customer & Product Insights (num.png)
+### 1. Peak Sales Periods
 
-Focuses on shopper demographics, peak traffic hours, customer satisfaction, and product rating trends.
+Sales activity is concentrated around specific hours, particularly **2 PM and 7 PM**.
 
-🎯 Key Performance Indicators (KPIs)
+This provides a basis for analyzing staffing requirements and operational capacity during higher-demand periods.
 
-Average Rating (6.97 / 10): Overall customer satisfaction baseline.
+### 2. Product Performance
 
-Member Sales % (50.85%) vs. Normal Sales % (49.15%): Customer retention and loyalty ratio.
+**Food and Beverages** represents one of the strongest product lines in terms of sales and also records a relatively high average customer rating.
 
-Female Sales % (51.98%) vs. Male Sales % (48.02%): Gender demographic breakdown.
+### 3. Customer Membership
 
-Avg Quantity per Invoice (5.51): Basket size per checkout.
+Member and Normal customers contribute relatively similar portions of total sales:
 
-Top Branch by Rating (Branch C): Store branch leading in overall satisfaction.
+* Members: **50.85%**
+* Normal customers: **49.15%**
 
-📊 Chart & Visual Analysis
+This indicates a relatively balanced customer mix between the two customer types.
 
-Sales by Hour of the Day (Line Chart):
+### 4. Payment Behavior
 
-Traffic Dynamics: Identifies peak shopping hours at 14:00 (2 PM) (~$34.7K) and 19:00 (7 PM) (~$39.7K), highlighting optimal times for store staffing and cashier allocations.
+Digital payment methods account for a significant portion of transactions:
 
-Product Line by Average Rating (Horizontal Bar Chart):
+* E-wallet: **34.74%**
+* Credit Card: **34.06%**
 
-Customer Satisfaction: Food and Beverages scores highest in customer ratings (7.1), while Home and Lifestyle sits at the lower end (6.8).
+Together, they represent approximately **68.8%** of sales.
 
-Quantity & Sales Relationship (Scatter Plot):
+### 5. Branch Satisfaction
 
-Volume vs. Value: Evaluates category placement by total unit volume vs. revenue generated to spot high-margin vs. high-volume inventory.
+Branch-level ratings show differences in average customer satisfaction, with Branch C recording the highest average rating among the three branches in this dataset.
 
-Customer Type Breakdown (Color-Coded Heatmap Table):
+---
 
-Compares revenue and items sold based on membership tier (Member vs. Normal) across product lines.
+## 📈 Business Recommendations
 
-Branch by Average Rating (Column Chart):
+Based on the dashboard analysis:
 
-Branch Satisfaction: Branch C (7.1 rating) > Branch A (7.0 rating) > Branch B (6.8 rating).
+1. **Staffing & Operations**
+   Review staffing levels around high-activity periods such as 2 PM and 7 PM.
 
-💡 Key Business Takeaways & Recommendations
+2. **Product Management**
+   Monitor high-performing product lines and evaluate opportunities for inventory optimization and assortment expansion.
 
-Staffing Optimization: Schedule additional cashier and floor staff around 2 PM and 7 PM to handle daily peak volume surges efficiently.
+3. **Customer Loyalty**
+   Analyze the conversion of Normal customers into Members through targeted loyalty initiatives.
 
-Product Focus: Food and Beverages is the core revenue driver and holds the highest customer rating (7.1). Expand product offerings in this category.
+4. **Digital Payments**
+   Monitor the reliability and availability of digital payment channels due to their significant contribution to sales.
 
-Loyalty Program Conversion: Normal customers make up 49.15% of sales; offering sign-up incentives at checkout could significantly boost membership conversion.
+5. **Customer Experience**
+   Investigate differences in branch and product-line ratings to identify potential customer-experience improvement areas.
 
-Payment Gateway Reliability: E-wallets and Cards represent >68% of total transactions. Ensuring zero downtime in digital point-of-sale systems is vital.
+---
 
-📂 Repository Structure
+## 💾 Dataset Overview
 
-.
-├── Dashboard Supermarket.pbix   # Primary Power BI Dashboard File
-├── supermarket.csv               # Raw Dataset
-├── num1.png                     # Page 1 Screenshot (Sales & Financials)
-├── num.png                      # Page 2 Screenshot (Customer Insights)
-└── README.md                    # Project Documentation
+The project uses the `supermarket.csv` dataset containing transactional records from three supermarket branches located in:
 
+* Naypyitaw
+* Yangon
+* Mandalay
 
-🛠️ Requirements & How to Run
+### Dataset Fields
 
-Clone this repository:
+| Field             | Description                   | Data Type   |
+| ----------------- | ----------------------------- | ----------- |
+| **Invoice ID**    | Unique transaction identifier | Text        |
+| **Branch**        | Store branch identifier       | Categorical |
+| **City**          | Store location                | Categorical |
+| **Customer Type** | Member or Normal customer     | Categorical |
+| **Gender**        | Customer gender               | Categorical |
+| **Product Line**  | Product category              | Categorical |
+| **Unit Price**    | Price per unit                | Numeric     |
+| **Quantity**      | Number of units purchased     | Numeric     |
+| **Tax 5%**        | Transaction tax               | Numeric     |
+| **Total**         | Total transaction amount      | Numeric     |
+| **Date**          | Transaction date              | Date        |
+| **Time**          | Transaction time              | Time        |
+| **Payment**       | Payment method                | Categorical |
+| **cogs**          | Cost of goods sold            | Numeric     |
+| **gross income**  | Gross income                  | Numeric     |
+| **Rating**        | Customer rating               | Numeric     |
 
+---
+
+## 🧮 Power BI Measures
+
+The dashboard uses DAX measures to calculate key business metrics, including:
+
+* Total Sales
+* Total COGS
+* Total Tax
+* Total Gross Income
+* Total Quantity
+* Total Invoices
+* Average Invoice Value
+* Average Unit Price
+* Average Rating
+* Member Sales %
+* Normal Sales %
+* Female Sales %
+* Male Sales %
+* Average Quantity per Invoice
+* Top Product Line
+* Top Branch by Rating
+
+These measures allow the dashboard to dynamically respond to filters and slicers.
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool                 | Purpose                                 |
+| -------------------- | --------------------------------------- |
+| **Power BI Desktop** | Dashboard development & visualization   |
+| **DAX**              | Measures and business calculations      |
+| **Power Query**      | Data transformation and preparation     |
+| **Excel / CSV**      | Source data                             |
+| **GitHub**           | Project version control & documentation |
+
+---
+
+## 📂 Repository Structure
+
+```text
+Supermarket-Business-Intelligence/
+│
+├── Dashboard Supermarket.pbix
+├── supermarket.csv
+├── num1.png
+├── num.png
+└── README.md
+```
+
+### File Description
+
+* `Dashboard Supermarket.pbix` — Interactive Power BI dashboard.
+* `supermarket.csv` — Raw transactional dataset.
+* `num1.png` — Sales & Financial Performance dashboard screenshot.
+* `num.png` — Customer & Product Insights dashboard screenshot.
+* `README.md` — Project documentation.
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/ahmedelsayeddev1/YOUR-REPO-NAME.git
+```
 
+### 2. Install Power BI Desktop
 
-Download and install Power BI Desktop.
+Download and install **Microsoft Power BI Desktop**.
 
-Open Dashboard Supermarket.pbix to explore the interactive visual features, filters, and slicers.
+### 3. Open the Dashboard
+
+Open:
+
+```text
+Dashboard Supermarket.pbix
+```
+
+### 4. Explore the Dashboard
+
+Use the available:
+
+* Filters
+* Slicers
+* Charts
+* KPI Cards
+* Tables
+* Interactive visualizations
+
+to explore the dataset and analyze supermarket performance.
+
+---
+
+## 📌 Project Highlights
+
+* Interactive **2-page Power BI dashboard**
+* Financial and operational KPI analysis
+* Customer segmentation analysis
+* Product-line performance analysis
+* Branch and city comparison
+* Hourly and monthly sales analysis
+* Payment-method analysis
+* Customer satisfaction analysis
+* DAX-based business calculations
+* Interactive filtering and drill-down analysis
+
+⭐ If you find this project useful, feel free to explore the dashboard and review the analysis.
